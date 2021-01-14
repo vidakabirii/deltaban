@@ -5,7 +5,7 @@
     </p>
     <div id="textBoxWrapper">
       <div>
-        <input v-model="test" placeholder="Search here..." />
+        <input v-model="searchItem" placeholder="Search here..." />
       </div>
       <div>
         <v-icon id="searchBtn">
@@ -17,7 +17,13 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      searchItem: "",
+    };
+  },
+};
 </script>
 
 <style lang="scss" scoped>
