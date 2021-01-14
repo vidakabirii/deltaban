@@ -36,7 +36,7 @@ export default {
   }
   #body {
     display: inline-block;
-    margin: 5px 10px;
+    margin: 0 10px;
     &:focus {
       outline: none;
       #icon {
@@ -44,18 +44,18 @@ export default {
       }
     }
     #icon {
-      width: 60px;
-      height: 60px;
+      width: 55px;
+      height: 55px;
       border-radius: 10px;
-      background-color: $lightBlue;
+      background-color: #eaeff2;
       padding: 15px;
-      color: rgb(35, 82, 100);
+      color: #235264;
       font-size: 28px;
     }
     p {
       margin-top: 3px;
       color: $darkBlue;
-      font-size: 14px;
+      font-size: 12px;
     }
   }
 }

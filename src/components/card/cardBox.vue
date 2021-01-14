@@ -3,7 +3,7 @@
     <div class="card" v-for="(item, index) in card" :key="index">
       <img :src="require(`@/assets/img/${item}.jpg`)" />
       <div>
-        {{item}}
+        {{ item }}
       </div>
     </div>
   </div>
@@ -19,8 +19,8 @@ export default {
   overflow: auto;
   white-space: nowrap;
   .card {
-    width: 210px;
-    height: 293px;
+    width: 171px;
+    height: 240px;
     border-radius: 15px;
     display: inline-block;
     margin: 10px;
@@ -34,8 +34,8 @@ export default {
     }
     img {
       object-fit: cover;
-      width: 210px;
-      height: 293px;
+      width: 171px;
+      height: 240px;
       border-radius: 15px;
     }
   }

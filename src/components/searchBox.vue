@@ -37,23 +37,24 @@ export default {
     font-size: 26px;
   }
   #textBoxWrapper {
-    width: 90%;
-    height: 50px;
+    width: 86%;
+    height: 42px;
     border-radius: 15px;
-    background-color: $middleBlue;
+    background-color: #dfe7ea;
     div {
       float: left;
       padding: 10px 0 10px 20px;
       #searchBtn {
         color: white;
-        font-size: 30px;
+        font-size: 26px;
+        opacity: 0.8;
       }
       &:last-of-type {
-        width: 49px;
-        height: 49px;
+        width: 41px;
+        height: 41px;
         border-radius: 15px;
-        background-color: $darkBlue;
-        padding: 10px;
+        background-color: #235264;
+        padding: 7px;
         float: right;
       }
     }

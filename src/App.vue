@@ -4,6 +4,7 @@
       <div id="wrapper">
         <headerLayout />
         <router-view />
+		
       </div>
     </div>
   </v-app>
@@ -25,7 +26,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  padding: 25px 10px 0 10px;
+  padding: 15px 10px 0 10px;
   background-image: linear-gradient(to right, $lightBlue, white);
 }
 #appWrapper {
