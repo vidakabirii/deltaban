@@ -5,9 +5,13 @@
     </p>
     <div id="textBoxWrapper">
       <div>
-        <input v-model="searchItem" placeholder="Search here..." />
+        <input
+          v-model="searchItem"
+          placeholder="Search here..."
+          v-on:keyup.enter="search()"
+        />
       </div>
-      <div>
+      <div @click="search()">
         <v-icon id="searchBtn">
           mdi-magnify
         </v-icon>
@@ -22,6 +26,11 @@ export default {
     return {
       searchItem: "",
     };
+  },
+  methods: {
+    search() {
+      this.$emit("search", this.searchItem);
+    },
   },
 };
 </script>
@@ -41,6 +50,11 @@ export default {
     height: 42px;
     border-radius: 15px;
     background-color: #dfe7ea;
+    input {
+      &:focus {
+        outline: none;
+      }
+    }
     div {
       float: left;
       padding: 10px 0 10px 20px;
