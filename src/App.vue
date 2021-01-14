@@ -1,7 +1,11 @@
 <template>
   <v-app id="app">
-    <headerLayout />
-    <router-view />
+    <div id="appWrapper">
+      <div id="wrapper">
+        <headerLayout />
+        <router-view />
+      </div>
+    </div>
   </v-app>
 </template>
 
@@ -22,11 +26,14 @@ export default {
   text-align: center;
   color: #2c3e50;
   padding: 25px 10px 0 10px;
-  background-image: linear-gradient(
-    to right,
-    rgba(226, 231, 235),
-    rgba(255, 255, 255)
-  );
+  background-image: linear-gradient(to right, $lightBlue, white);
+}
+#appWrapper {
+  text-align: center;
+  text-align: -webkit-center;
+}
+#wrapper {
+  max-width: 780px;
 }
 #nav {
   padding: 30px;

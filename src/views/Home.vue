@@ -1,10 +1,17 @@
 <template>
-  <div class="home"></div>
+  <div class="home">
+    <searchBox />
+  </div>
 </template>
 
 <script>
+import searchBox from "@/components/searchBox.vue";
 export default {
   name: "Home",
-  components: {},
+  components: {
+    searchBox,
+  },
 };
 </script>
+<style scoped>
+</style>
