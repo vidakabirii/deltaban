@@ -1,0 +1,43 @@
+<template>
+  <div class="wrapper">
+    <div class="card" v-for="(item, index) in card" :key="index">
+      <img :src="require(`@/assets/img/${item}.jpg`)" />
+      <div>
+        {{item}}
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  props: ["card"],
+};
+</script>
+<style lang="scss" scoped>
+.wrapper {
+  overflow: auto;
+  white-space: nowrap;
+  .card {
+    width: 210px;
+    height: 293px;
+    border-radius: 15px;
+    display: inline-block;
+    margin: 10px;
+    position: relative;
+    text-align: center;
+    color: white;
+    div {
+      position: absolute;
+      top: 8px;
+      left: 16px;
+    }
+    img {
+      object-fit: cover;
+      width: 210px;
+      height: 293px;
+      border-radius: 15px;
+    }
+  }
+}
+</style>

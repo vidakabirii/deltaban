@@ -13,6 +13,7 @@
         sign up
       </button>
       <button>
+        <v-icon>mdi-login</v-icon>
         login
       </button>
     </div>
@@ -69,7 +70,7 @@ export default {
     border-radius: 40px;
     padding: 10px;
     color: $darkBlue;
-    width: 90%;
+    width: 80%;
     display: block;
     margin: 5px;
   }
