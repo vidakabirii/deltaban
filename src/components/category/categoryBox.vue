@@ -47,9 +47,8 @@ export default {
       width: 55px;
       height: 55px;
       border-radius: 10px;
-      background-color: #eaeff2;
+      background-color: $middleBlue;
       padding: 15px;
-      color: #235264;
       font-size: 28px;
     }
     p {

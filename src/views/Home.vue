@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <searchBox @search="search($event)" />
+    <searchBox @search="search($event)" :load="load" />
     <categories />
     <cards />
   </div>
@@ -14,6 +14,11 @@ import * as googleService from "@/service/api/google/google.js";
 
 export default {
   name: "Home",
+  data() {
+    return {
+      load: false,
+    };
+  },
   components: {
     searchBox,
     categories,
@@ -21,8 +26,12 @@ export default {
   },
   methods: {
     search(item) {
+      this.load = true;
       googleService.get(item).then((res) => {
-        if (res.status == 200) location.href = res.data.items[0].link;
+        if (res.status == 200) {
+          location.href = res.data.items[0].link;
+          this.load = false;
+        }
       });
     },
   },

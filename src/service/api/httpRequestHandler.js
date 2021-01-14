@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const BaseURL =
-  "https://www.googleapis.com/customsearch/v1?key=AIzaSyBOhhoHK54OUsYee8FDQkOsLEg23vGjqzg&cx=407f30d1f6bdc2ea3&q=";
+  "https://www.googleapis.com/";
 
 export default {
   async get(requestUrl) {
