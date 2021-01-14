@@ -4,7 +4,7 @@
       <div id="wrapper">
         <headerLayout />
         <router-view />
-		
+        <footerLayout />
       </div>
     </div>
   </v-app>
@@ -12,10 +12,12 @@
 
 <script>
 import headerLayout from "@/components/layout/header.vue";
+import footerLayout from "@/components/layout/footer.vue";
 
 export default {
   components: {
     headerLayout,
+    footerLayout,
   },
 };
 </script>
@@ -26,7 +28,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  padding: 15px 10px 0 10px;
+  padding: 10px 10px 0 10px;
   background-image: linear-gradient(to right, $lightBlue, white);
 }
 #appWrapper {

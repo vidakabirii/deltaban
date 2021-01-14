@@ -40,4 +40,15 @@ export default {
     }
   }
 }
+@media (min-width: 425px) {
+  .wrapper {
+    .card {
+      margin: 10px 15px;
+      img {
+        width: 183px;
+        height: 273px;
+      }
+    }
+  }
+}
 </style>
